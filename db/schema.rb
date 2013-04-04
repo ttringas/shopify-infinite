@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130404202608) do
+ActiveRecord::Schema.define(:version => 20130404210407) do
 
   create_table "shops", :force => true do |t|
     t.string   "url"
@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(:version => 20130404202608) do
     t.boolean  "script_installed"
     t.integer  "products_per_row"
     t.string   "theme_markup"
+    t.string   "custom_markup"
   end
 
   add_index "shops", ["url"], :name => "index_shops_on_url"

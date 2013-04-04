@@ -2,7 +2,7 @@ if (!iScroll) {
   var iScroll = (function(window, undefined) {
     iScroll = {
       shop_url: '<%= @shop.url %>',
-      markup: '<%= @shop.theme_markup %>'
+      markup: '<%= @shop.custom_markup || @shop.theme_markup %>'
     }
 
     jQuery(document).ready(function($) {

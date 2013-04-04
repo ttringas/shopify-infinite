@@ -4,7 +4,10 @@
   <div class="form-inputs">
     <div class="control-group">
       <legend>General Settings</legend>
-      <%= f.input :theme_markup %>
+      <p>Select your theme</p>
+      <%= f.input :theme_markup, options_for_select([["Radiance", ".product-grid"], ["New Standard", "#coll-product-list"]] %>
+      <p>Or enter a custom jQuery selector</p>
+      <%= f.input :custom_markup %>
     </div>
   </div>
 
