@@ -1,7 +1,7 @@
 class ShopsController < ApplicationController
   around_filter :shopify_session
   before_filter :correct_shop?
-  before_filter :paid_shop?
+  # before_filter :paid_shop?
   after_filter :create_scripttag
 
   # GET /shops/1/edit
